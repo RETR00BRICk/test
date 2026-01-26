@@ -10,4 +10,7 @@ elif operation == "*":
     result = num1 * num2
 elif operation == "*":
     result = num1 * num2
-el
+elif operation == "average":
+    result = (num1 + num2)/2
+
+print(">" + str(result))
