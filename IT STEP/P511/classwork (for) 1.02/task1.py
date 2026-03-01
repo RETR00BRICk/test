@@ -54,4 +54,6 @@ match choise:
             print("." * counter, end = "")
             print("#"*(length - counter*2), end = "")
             print("." * counter)
+    case _:
+        print("фігуру не знайдено")
 
