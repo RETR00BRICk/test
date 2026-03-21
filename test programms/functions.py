@@ -114,3 +114,86 @@ local_func(10)
 print(global_var)
 
 #ENCLOSING VS LOCAL
+
+#?????? імперативий?
+def get_discounted_prices(prices: list):
+    discounted_prices = []
+
+    for price in prices:
+        if price > 100:
+            discounted_prices.append(price * 0.8)
+    
+    return discounted_prices
+
+original_prices = [50, 120, 80, 200, 300]
+result = get_discounted_prices(original_prices)
+print(result)
+
+#####
+
+def say_hello():
+    print("Hello!")
+func_var = say_hello
+
+def some_function(callback):
+    print("some_func calls its callback")
+    callback()
+
+#some_function(say_hello)
+
+sum3 = lambda a, b: a+b
+
+print(sum3(10,12))
+
+operations = {
+    '+': lambda a, b: a + b,
+    '-': lambda a, b: a - b,
+    '*': lambda a, b: a * b,
+    '/': lambda a, b: a / b,
+}
+
+'''num1 = float(input())
+num2 = float(input())
+action = input("+ - * /")
+
+if action in operations:
+    print(operations[action](num1,num2))
+'''
+##NOT PURE FUNCTION:
+
+tax_rate = 0.2
+
+def calculate_tax_impure(amount):
+    return amount*tax_rate
+
+print(calculate_tax_impure(10000))
+
+#PURE FUNTCION
+def calculate_tax_pure(amount, tax_rate):
+    return amount * tax_rate
+
+print(calculate_tax_pure(1000, 0.3))
+
+def add_product(cart : list, product : str): #IMPURE
+    cart.apped(product)
+    return cart
+
+def add_product_pure(cart : list, product : str): #PURE
+    new_cart = cart.copy()
+    new_cart.append(product)
+    return new_cart
+
+my_cart = ['apple', 'banana']
+my_cart = add_product_pure(my_cart, 'orange')
+
+print(my_cart)
+
+###
+
+'''def create_multiplier(factor):
+    def multiplier(number)'''
+
+def changeupper(func):
+    def inner():
+        return func().upper()
+
