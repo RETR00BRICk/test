@@ -31,7 +31,7 @@ class Console:
         self.border()
         print(symbol[0]*frame_width_before + text + symbol[0]*frame_width_after)
 
-    def bigtext(self, text: str, symbol: str):
+    '''def bigtext(self, text: str, symbol: str):
         self.border()
         text_len = len(text)
         if text_len >= self.width:
@@ -41,7 +41,7 @@ class Console:
         for letter_num in range(text_len):
             letter_string_num = (letter_num) * (self.width-1) // (text_len-1)
             string[letter_string_num] = text[letter_num]
-        print("".join(string))
+        print("".join(string))'''
  
     def handle_choices(self, text : str, choices: list) -> tuple:
         self.border()
