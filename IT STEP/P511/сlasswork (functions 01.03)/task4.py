@@ -1,3 +1,5 @@
-def get_number_length(number : int) -> int:
-    number = str(number) #мы переводим в текст. С текстом удобнее работать чем с этими % и //
-    len 
+def find_max_of_four(a, b, c, d):
+    return max(a, b, c, d)
+
+result = find_max_of_four(10, 45, 2, 17)
+print(f"The maximum number is: {result}")

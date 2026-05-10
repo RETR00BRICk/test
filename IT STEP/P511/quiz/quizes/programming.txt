@@ -1,7 +1,0 @@
-what is ssd?|solid state drive|sand sandy dirt|soft secure direction|skilled school director|0
-1 mb =|1024 bytes|1000 bytes|1048 bytes|2096 bytes|0
-1 byte =|8 bit|4 bit|10 bit|5 bit|0
-8 bit unsigned integer can reach value up to|255|254|256|1024|2
-what is cpu?|central processor unit|cool pc user|cooler periodic update|coconut pie uderbrake|0
-int vs float|int is an array|int is a variable, float is an array|float can store percise values, unlike int|i dont know|2
-did you like this quiz?|yes|no|no|no|0

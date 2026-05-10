@@ -1,5 +1,0 @@
-1+(len([1,2,3])=|1|2|3|4|3
-2+2|4|3|555|441|0
-what is the weather today|sunny|couldy|thunder|blizzard|1
-"hello world".split()|["hello", "world"]|["hello"]["world"]|["hellloworld"]|"hello" "world"|0
-3 + 41|42|45|44|11|2
