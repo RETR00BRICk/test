@@ -1,15 +1,26 @@
-import random as rd
-import string as s
+import random
+import string
 
-def get_variant_1(nickname : str):
-    return nickname + str(rd.randint(100,9999))
+base_name = input("Enter your base name: ")
 
-def get_variant_2(nickname: str):
-    symbols = filter(lambda symbol: symbol in "-._",s.punctuation)
-    letters = rd.choices(s.ascii_lowercase, k = 3)
-    print(letters)
+digital_num = random.randint(100, 9999)
+variant1 = f"{base_name}{digital_num}"
 
-nickname = input("Введіть ім'я>> ")
-print(f"Перший варіант нікнейму: {get_variant_1(nickname)}")
+separators = ["_", ".", "-"]
+sep = random.choice(separators)
+random_letters = "".join(random.choices(string.ascii_lowercase, k=3))
+variant2 = f"{base_name}{sep}{random_letters}"
 
-get_variant_2("dd")
+prefixes = ["Pro", "Super", "Ultra"]
+prefix = random.choice(prefixes)
+capital_name = base_name.capitalize()
+random_digits = "".join(random.choices(string.digits, k=2))
+
+elite_parts = list(capital_name + random_digits)
+random.shuffle(elite_parts)
+variant3 = prefix + "".join(elite_parts)
+
+print("Generated nicknames:")
+print(f"Variant 1: {variant1}")
+print(f"Variant 2: {variant2}")
+print(f"Variant 3: {variant3}")
